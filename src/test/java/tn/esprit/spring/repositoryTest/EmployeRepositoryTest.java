@@ -9,8 +9,10 @@ import java.util.Date;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+import org.apache.log4j.Logger;
+
+//import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
@@ -33,7 +35,8 @@ import tn.esprit.spring.services.EmployeServiceImpl;
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 public class EmployeRepositoryTest {
-	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeServiceImpl.class);
+	//private static final Logger LOGGER = LoggerFactory.getLogger(EmployeServiceImpl.class);
+	private static final Logger LOGGER =  Logger.getLogger(EmployeServiceImpl.class);
 
 	@Autowired
 	EmployeRepository repo;
@@ -57,8 +60,7 @@ public class EmployeRepositoryTest {
 	@Test
 	@Rollback(false)
 	public void countempTest() {
-		LOGGER.info("{La methode countemp dans EmployeRepository retourne la valeur :  }" + " " + repo.countemp(),
-				+repo.countemp());
+		LOGGER.info("{La methode countemp dans EmployeRepository retourne la valeur :  }" + " " + repo.countemp());
 
 		assertThat(repo.countemp()).isPositive().isNotZero();
 
@@ -94,8 +96,8 @@ public class EmployeRepositoryTest {
 		Contrat contrat = getContrat(employe);
 		float salaire = repo.getSalaireByEmployeIdJPQL(contrat.getEmploye().getId());
 
-		LOGGER.info("{La methode getSalaireByEmployeIdJPQL dans EmployeRepository return :   }" + " "
-				+ repo.getSalaireByEmployeIdJPQL(contrat.getEmploye().getId()));
+		LOGGER.error("{La methode getSalaireByEmployeIdJPQL dans EmployeRepository return :   }" + " "
+		+ repo.getSalaireByEmployeIdJPQL(contrat.getEmploye().getId()));
 		// assertNotNull(salaire);
 		assertThat(salaire).isPositive().isNotZero();
 
@@ -169,7 +171,7 @@ public class EmployeRepositoryTest {
 	}
 
 	private Employe getEmploye() {
-		Employe employe = new Employe("Med", "BEN KHOUDJA", "med@esprit.tn", true, Role.ADMINISTRATEUR);
+		Employe employe = new Employe("Med", "romdhana", "med@esprit.tn", true, Role.ADMINISTRATEUR);
 
 		repo.save(employe);
 		return employe;

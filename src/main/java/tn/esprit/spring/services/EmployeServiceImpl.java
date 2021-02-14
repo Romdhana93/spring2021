@@ -40,7 +40,7 @@ public class EmployeServiceImpl implements IEmployeService {
 		Employe employeManagedEntity = employeRepository.findById(employe.getId()).orElse(null);
 		if (employeManagedEntity != null) {
 
-			LOGGER.info("ajouter Employe avec succes {}", employeManagedEntity.getId());
+			LOGGER.error("ajouter Employe avec succes {}", employeManagedEntity.getNom());
 
 			return employeManagedEntity.getId();
 
