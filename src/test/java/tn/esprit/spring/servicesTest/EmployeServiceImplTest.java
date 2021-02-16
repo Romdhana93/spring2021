@@ -137,7 +137,7 @@ public class EmployeServiceImplTest {
 
 	}
 
-	@Test(expected = Test.None.class /* no exception expected */)
+	/*@Test(expected = Test.None.class  no exception expected )
 	public void affecterContratAEmployeTest() {
 		Contrat contrat = new Contrat(new Date(), "CDI", 1500);
 		contratRepoistory.save(contrat);
@@ -147,7 +147,7 @@ public class EmployeServiceImplTest {
 		controller.affecterContratAEmploye(contrat.getReference(), employe.getId());
 
 	}
-
+*/
 	@Test
 	public void getEmployePrenomByIdTest() {
 		Employe employe = new Employe("Imen", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
