@@ -13,22 +13,25 @@
 	<version>1.0</version>
 	<name>timesheet</name>
 	<description>timesheet</description>
-<distributionManagement>
-<snapshotRepository>
-<id>nexus</id>
-<url>http://192.168.127.1:8081/nexus/content/repositories/snapshots/</url>
-</snapshotRepository>
-<repository>
-<id>nexus</id>
-<url>http://192.168.127.1:8081/nexus/content/repositories/releases/</url>
-</repository>
-</distributionManagement>
+
+	<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://localhost:9081/repository/maven-releases/</url>
+
+    </repository>
+    
+  </distributionManagement>
+
 	<properties>
 		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 
 	<dependencies>
+
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -124,7 +127,7 @@
 			<artifactId>spring-boot-starter-log4j</artifactId>
 			<version>1.3.8.RELEASE</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -146,7 +149,7 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-			
+
 		</dependency>
 
 
@@ -172,9 +175,9 @@
 			<artifactId>jcabi-log</artifactId>
 			<version>0.17.1</version>
 		</dependency>
-		
 
-		
+
+
 	</dependencies>
 
 

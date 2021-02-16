@@ -50,33 +50,30 @@ public class EmployeRepositoryTest {
 	java.util.List<String> eml;
 
 	@Test
-	@Rollback(false)
+
 	public void ajouterEmployerTest() {
 		Employe employe = getEmploye();
 
 		assertNotNull(employe);
 	}
 
-	@Test
-	@Rollback(false)
+	/*@Test
 	public void countempTest() {
 		LOGGER.info("{La methode countemp dans EmployeRepository retourne la valeur :  }" + " " + repo.countemp());
 
 		assertThat(repo.countemp()).isPositive().isNotZero();
 
-	}
+	}*/
 
-	@Test
-	@Rollback(false)
+	/*@Test
 	public void employeNamesTest() {
 		java.util.List<String> names = repo.employeNames();
 		LOGGER.info("{La methode employeNames dans EmployeRepository contient :  }" + " " + repo.employeNames().size());
 		assertThat(names.size()).isPositive();
 
-	}
+	}*/
 
 	@Test
-	@Rollback(false)
 	public void mettreAjourEmailByEmployeIdJPQLTest() {
 		Employe employe = new Employe("Sabeh", "Kchock", "sabeh@gmail.com", true, Role.CHEF_DEPARTEMENT);
 
@@ -90,7 +87,6 @@ public class EmployeRepositoryTest {
 	}
 
 	@Test
-	@Rollback(false)
 	public void getSalaireByEmployeIdJPQLTest() {
 		Employe employe = getEmploye();
 		Contrat contrat = getContrat(employe);
@@ -104,7 +100,6 @@ public class EmployeRepositoryTest {
 	}
 
 	@Test
-	@Rollback(false)
 	public void deleteAllContratJPQLTest() {
 		Employe employe = getEmploye();
 		Contrat contrat = getContrat(employe);
@@ -119,7 +114,6 @@ public class EmployeRepositoryTest {
 	}
 
 	@Test
-	@Rollback(false)
 	public void getSalaireMoyenByDepartementIdTest() {
 		Departement departemen = new Departement("Informatique");
 		java.util.List<Departement> departements = new ArrayList<>();
@@ -146,7 +140,6 @@ public class EmployeRepositoryTest {
 	}
 
 	@Test
-	@Rollback(false)
 	public void getAllEmployeByEntreprisecTest() {
 		Employe employe1 = getEmploye();
 		Employe employe2 = getEmploye();
