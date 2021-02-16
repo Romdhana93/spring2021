@@ -183,7 +183,7 @@ public class EmployeServiceImplTest {
 		assertThat(employes.size()).isPositive();
 
 	}
-
+/*
 	@Test
 	public void getSalaireMoyenByDepartementIdTest() {
 		Departement departemen = new Departement("Informatique");
@@ -219,8 +219,8 @@ public class EmployeServiceImplTest {
 
 		assertThat(d).isPositive().isNotZero();
 	}
-
-	@Test
+*/
+/*	@Test
 	public void getSalaireByEmployeIdJPQLTest() {
 		Employe employe = new Employe("Imen", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
 		controller.ajouterEmploye(employe);
@@ -231,7 +231,7 @@ public class EmployeServiceImplTest {
 		float salaire = controller.getSalaireByEmployeIdJPQL(employe.getId());
 
 		assertThat(salaire).isPositive().isGreaterThan(0);
-	}
+	}*/
 
 	@Test
 	public void deleteAllContratJPQLTest() {
