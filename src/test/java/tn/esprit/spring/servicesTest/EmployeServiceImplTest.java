@@ -68,7 +68,7 @@ public class EmployeServiceImplTest {
 
 	@Test
 	public void mettreAjourEmailByEmployeIdTest() {
-		Employe employe = new Employe("Kawthar", "BEN KHOUDJA", "kawthaar.benkhoudja@esprit.tn", true,
+		Employe employe = new Employe("Kawthar", "ali", "kawthaar.benkhoudja@esprit.tn", true,
 				Role.ADMINISTRATEUR);
 		controller.ajouterEmploye(employe);
 //
@@ -81,7 +81,7 @@ public class EmployeServiceImplTest {
 	@Test
 	public void affecterEmployeADepartementTest() {
 
-		Employe employe = new Employe("Kawthar", "BEN KHOUDJA", "kawthaar.benkhoudja@esprit.tn", true,
+		Employe employe = new Employe("Kawthar", "aloulou", "kawthaar.benkhoudja@esprit.tn", true,
 				Role.ADMINISTRATEUR);
 		controller.ajouterEmploye(employe);
 		Departement departement = new Departement("R.H");
@@ -94,7 +94,7 @@ public class EmployeServiceImplTest {
 
 	@Test
 	public void desaffecterEmployeDuDepartementTest() {
-		Employe employe = new Employe("Imen", "BEN KHOUDJA", "kawthaar.benkhoudja@esprit.tn", true,
+		Employe employe = new Employe("Imen", "ala", "kawthaar.benkhoudja@esprit.tn", true,
 				Role.ADMINISTRATEUR);
 		controller.ajouterEmploye(employe);
 		Departement departement = new Departement("R.D");
@@ -137,17 +137,7 @@ public class EmployeServiceImplTest {
 
 	}
 
-	/*@Test(expected = Test.None.class  no exception expected )
-	public void affecterContratAEmployeTest() {
-		Contrat contrat = new Contrat(new Date(), "CDI", 1500);
-		contratRepoistory.save(contrat);
-		Employe employe = new Employe("Imen", "BEN KHOUDJA", "kawthaar.benkhoudja@esprit.tn", true,
-				Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe);
-		controller.affecterContratAEmploye(contrat.getReference(), employe.getId());
 
-	}
-*/
 	@Test
 	public void getEmployePrenomByIdTest() {
 		Employe employe = new Employe("Imen", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
@@ -183,55 +173,7 @@ public class EmployeServiceImplTest {
 		assertThat(employes.size()).isPositive();
 
 	}
-/*
-	@Test
-	public void getSalaireMoyenByDepartementIdTest() {
-		Departement departemen = new Departement("Informatique");
 
-		Employe employe = new Employe("Imen", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe);
-		Employe employe1 = new Employe("Souad", "Mahasen", "Souad.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe1);
-		Employe employe2 = new Employe("Bilel", "Hedhli", "Bilel.HEdhli@esprit.tn", true, Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe2);
-
-		Contrat contrat = new Contrat(new Date(), "CDI", 2000);
-		Contrat contrat1 = new Contrat(new Date(), "CDI", 2345);
-		Contrat contrat2 = new Contrat(new Date(), "CDI", 1234);
-
-		contrat.setEmploye(employe);
-		contrat1.setEmploye(employe1);
-		contrat2.setEmploye(employe2);
-
-		java.util.List<Employe> employes = new ArrayList<>();
-		employes.add(contrat.getEmploye());
-		employes.add(contrat1.getEmploye());
-		employes.add(contrat2.getEmploye());
-
-		departemen.setEmployes(employes);
-
-		controller.ajouterContrat(contrat);
-		controller.ajouterContrat(contrat1);
-		controller.ajouterContrat(contrat2);
-		deptRepoistory.save(departemen);
-
-		double d = controller.getSalaireMoyenByDepartementId(departemen.getId());
-
-		assertThat(d).isPositive().isNotZero();
-	}
-*/
-/*	@Test
-	public void getSalaireByEmployeIdJPQLTest() {
-		Employe employe = new Employe("Imen", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe);
-
-		Contrat contrat = new Contrat(new Date(), "CDI", 2000);
-		contrat.setEmploye(employe);
-		controller.ajouterContrat(contrat);
-		float salaire = controller.getSalaireByEmployeIdJPQL(employe.getId());
-
-		assertThat(salaire).isPositive().isGreaterThan(0);
-	}*/
 
 	@Test
 	public void deleteAllContratJPQLTest() {

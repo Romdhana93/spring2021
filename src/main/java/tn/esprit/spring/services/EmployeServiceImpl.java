@@ -327,13 +327,12 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	@Override
 	public Employe authenticate(String login, String password) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	@Override
 	public int addOrUpdateEmploye(Employe employe) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
