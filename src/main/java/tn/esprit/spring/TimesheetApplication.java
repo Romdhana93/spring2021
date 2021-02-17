@@ -27,7 +27,7 @@ public class TimesheetApplication {
 		return new ServletRegistrationBean(servlet, "*.jsf"); }
 
 	@Bean
-	public FilterRegistrationBean rewriteFilter() {
+	public FilterRegistrationBean<RewriteFilter> rewriteFilter() {
 		FilterRegistrationBean rwFilter = new FilterRegistrationBean(new RewriteFilter());
 		rwFilter.setDispatcherTypes(EnumSet.of(DispatcherType.FORWARD, DispatcherType.REQUEST, DispatcherType.ASYNC, DispatcherType.ERROR));
 		rwFilter.addUrlPatterns("/*");
