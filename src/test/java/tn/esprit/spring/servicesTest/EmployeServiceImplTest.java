@@ -66,15 +66,7 @@ public class EmployeServiceImplTest {
 		assertThat(i).isNotNegative();
 	}
 
-	@Test
-	public void mettreAjourEmailByEmployeIdTest() {
-		Employe employe = new Employe("Kawthar", "ali", "kawthaar.benkhoudja@esprit.tn", true,
-				Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe);
 
-		controller.mettreAjourEmailByEmployeId("kawthaar.benkhoudja@gmail.com", employe.getId());
-	
-	}
 
 	@Test
 	public void affecterEmployeADepartementTest() {
