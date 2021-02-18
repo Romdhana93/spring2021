@@ -40,7 +40,7 @@ public class EmployeServiceImpl implements IEmployeService {
 		Employe employeManagedEntity = employeRepository.findById(employe.getId()).orElse(null);
 		if (employeManagedEntity != null) {
 
-			LOGGER.error("ajouter Employe avec succes {}", employeManagedEntity.getNom());
+			LOGGER.info("ajouter Employe avec succes {}", employeManagedEntity.getNom());
 
 			return employeManagedEntity.getId();
 
@@ -158,12 +158,13 @@ public class EmployeServiceImpl implements IEmployeService {
 				return employeManagedEntity.getPrenom();
 
 			} else {
-				LOGGER.error("Erreur methode getEmployePrenomById :NullPointerException");
+				LOGGER.error("Erreur methode getEmployePrenomById ");
 
 				return null;
 			}
 		} catch (Exception e) {
 			LOGGER.error("Erreur methode getEmployePrenomById {}", e.getMessage());
+			
 			return e.getMessage();
 		}
 
