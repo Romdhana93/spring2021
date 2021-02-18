@@ -95,20 +95,7 @@ public class EmployeServiceImplTest {
 
 }
 
-	@Test
-	public void deleteEmployeByIdTest() {
-		Employe employe = new Employe("Supprimer", "Supprimer", "Supprimer.benkhoudja@esprit.tn", true,
-				Role.ADMINISTRATEUR);
-		controller.ajouterEmploye(employe);
-		Employe employeManagedEntity = null;
-		boolean b = employeRepository.findById(employe.getId()).isPresent();
-		if (b) {
-			employeManagedEntity = employeRepository.findById(employe.getId()).get();
 
-		}
-		controller.deleteEmployeById(employeManagedEntity.getId());
-
-	}
 
 	@Test
 	public void deleteContratByIdTest() {
