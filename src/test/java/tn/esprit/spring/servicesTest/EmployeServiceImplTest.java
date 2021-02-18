@@ -66,14 +66,14 @@ public class EmployeServiceImplTest {
 	
 		int i = controller.ajouterEmploye(employe);
 
-		assertThat(5).isNotNegative();
+		assertThat(i).isNotNegative();
 	}
 
 	@Test
 	public void ajouterContratTest() {
 		Contrat contrat = new Contrat(new Date(), "CDI", 1500);
 		controller.ajouterContrat(contrat);
-		assertNotNull(null);
+		assertNotNull(contrat);
 
 	}
 	
@@ -85,7 +85,7 @@ public class EmployeServiceImplTest {
 
 		String name = controller.getEmployePrenomById(employe.getId());
 
-		assertThat("SAHLI").isEqualTo(employe.getPrenom());
+		assertThat(name).isEqualTo(employe.getPrenom());
 	}
 
 	@Test
