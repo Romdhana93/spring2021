@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import tn.esprit.spring.entities.Contrat;
 import tn.esprit.spring.repository.ContratRepository;
+import tn.esprit.spring.repository.EmployeRepository;
 
 @Service
 public class ContratServiceImpl implements IContratService {
@@ -14,6 +15,8 @@ public class ContratServiceImpl implements IContratService {
 
 	@Autowired
 	ContratRepository contratRepository;
+	@Autowired
+	EmployeRepository employeRepository;
 
 
 	public List<Contrat> getAllContrats() {
