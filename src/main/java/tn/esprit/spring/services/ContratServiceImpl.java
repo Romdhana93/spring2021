@@ -15,7 +15,8 @@ public class ContratServiceImpl implements IContratService {
 
 	@Autowired
 	ContratRepository contratRepository;
-	
+	@Autowired
+	EmployeRepository employeRepository;
 
 
 	public List<Contrat> getAllContrats() {
