@@ -93,7 +93,7 @@ public class EmployeServiceImplTest {
 	@Test
 	public void affecterEmployeADepartementTest() {
 
-		Employe employe = new Employe("Kawthar", "benkhoudja", "kawthaar.benkhoudja@esprit.tn", true,
+		Employe employe = new Employe("Kawthar", "benkhoudjaa", "kawthaar.benkhoudja@esprit.tn", true,
 				Role.ADMINISTRATEUR);
 		controller.ajouterEmploye(employe);
 		Departement departement = new Departement("R.H");
