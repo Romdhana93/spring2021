@@ -1,33 +1,98 @@
-2021-02-18 04:22:12 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest], using SpringBootContextLoader
-2021-02-18 04:22:12 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-02-18 04:22:12 INFO  AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest]: EmployeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-02-18 04:22:12 INFO  SpringBootTestContextBootstrapper:235 - Found @SpringBootConfiguration tn.esprit.spring.TimesheetApplication for test class tn.esprit.spring.servicesTest.EmployeServiceImplTest
-2021-02-18 04:22:12 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2021-02-18 04:22:12 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d5d943d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@368f2016, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c583ecf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@692f203f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48f2bd5b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b2bbc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a1153bc, org.springframework.test.context.event.EventPublishingTestExecutionListener@1aafa419, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@47eaca72, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@55141def, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55182842, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3270d194, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@235834f2]
-2021-02-18 04:22:13 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
-2021-02-18 04:22:13 INFO  EmployeServiceImplTest:55 - Starting EmployeServiceImplTest on DESKTOP-QJAM0GO with PID 25064 (started by Med Salah in D:\timesheet-20210213T123139Z-001\timesheet)
-2021-02-18 04:22:13 INFO  EmployeServiceImplTest:55 - Starting EmployeServiceImplTest on DESKTOP-QJAM0GO with PID 25064 (started by Med Salah in D:\timesheet-20210213T123139Z-001\timesheet)
-2021-02-18 04:22:13 INFO  EmployeServiceImplTest:651 - No active profile set, falling back to default profiles: default
-2021-02-18 04:22:13 INFO  EmployeServiceImplTest:651 - No active profile set, falling back to default profiles: default
-2021-02-18 04:22:13 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-02-18 04:22:13 INFO  RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 66ms. Found 6 repository interfaces.
-2021-02-18 04:22:14 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-02-18 04:22:14 INFO  Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
-2021-02-18 04:22:14 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-02-18 04:22:14 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
-2021-02-18 04:22:14 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
-2021-02-18 04:22:14 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2021-02-18 04:22:15 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-02-18 04:22:15 INFO  LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-02-18 04:22:16 WARN  JpaBaseConfiguration$JpaWebConfiguration:220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-02-18 04:22:16 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-18 04:22:17 INFO  EmployeServiceImplTest:61 - Started EmployeServiceImplTest in 4.307 seconds (JVM running for 5.074)
-2021-02-18 04:22:17 INFO  EmployeServiceImplTest:61 - Started EmployeServiceImplTest in 4.307 seconds (JVM running for 5.074)
-2021-02-18 04:22:17 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Imen
-2021-02-18 04:22:17 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Imen
-2021-02-18 04:22:17 INFO  EmployeServiceImpl:154 - {get Employe Prenom ById}
-2021-02-18 04:22:17 INFO  EmployeServiceImpl:154 - {get Employe Prenom ById}
-2021-02-18 04:22:17 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-02-18 04:22:17 INFO  LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-02-18 04:22:17 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
-2021-02-18 04:22:17 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest], using SpringBootContextLoader
+2021-02-18 05:24:31 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-18 05:24:31 INFO  AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest]: EmployeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:235 - Found @SpringBootConfiguration tn.esprit.spring.TimesheetApplication for test class tn.esprit.spring.servicesTest.EmployeServiceImplTest
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4efc180e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@bd4dc25, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25084a1e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@156b88f5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bf9ce3e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@16610890, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@71def8f8, org.springframework.test.context.event.EventPublishingTestExecutionListener@383bfa16, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4d465b11, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53fdffa1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5562c41e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32ee6fee, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4d0f2471]
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest], using SpringBootContextLoader
+2021-02-18 05:24:31 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-18 05:24:31 INFO  AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [tn.esprit.spring.servicesTest.EmployeServiceImplTest]: EmployeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:235 - Found @SpringBootConfiguration tn.esprit.spring.TimesheetApplication for test class tn.esprit.spring.servicesTest.EmployeServiceImplTest
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@cc43f62, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5b218417, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@645aa696, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6caf0677, org.springframework.test.context.support.DirtiesContextTestExecutionListener@413d1baf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@16eb3ea3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@273444fe, org.springframework.test.context.event.EventPublishingTestExecutionListener@33bc72d1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a75e76a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5524cca1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5032714f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@48bb62, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@353352b6]
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.TimesheetApplicationTests], using SpringBootContextLoader
+2021-02-18 05:24:31 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [tn.esprit.spring.TimesheetApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-18 05:24:31 INFO  AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [tn.esprit.spring.TimesheetApplicationTests]: TimesheetApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:235 - Found @SpringBootConfiguration tn.esprit.spring.TimesheetApplication for test class tn.esprit.spring.TimesheetApplicationTests
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-18 05:24:31 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a07d605, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@74287ea3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d7758be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2bdd8394, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f9edf14, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68746f22, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f01783a, org.springframework.test.context.event.EventPublishingTestExecutionListener@68878f6d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41488b16, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a8ef162, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2eea88a1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7ac296f6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7fd7a283]
+2021-02-18 05:24:31 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2021-02-18 05:24:31 INFO  TimesheetApplicationTests:55 - Starting TimesheetApplicationTests on DESKTOP-QJAM0GO with PID 25696 (started by Med Salah in D:\timesheet-20210213T123139Z-001\timesheet)
+2021-02-18 05:24:31 INFO  TimesheetApplicationTests:651 - No active profile set, falling back to default profiles: default
+2021-02-18 05:24:32 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-18 05:24:32 INFO  RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 84ms. Found 6 repository interfaces.
+2021-02-18 05:24:33 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-18 05:24:33 INFO  Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+2021-02-18 05:24:33 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-18 05:24:34 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2021-02-18 05:24:34 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2021-02-18 05:24:34 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-02-18 05:24:35 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-18 05:24:35 INFO  LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-18 05:24:36 WARN  JpaBaseConfiguration$JpaWebConfiguration:220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-18 05:24:36 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-18 05:24:36 INFO  TimesheetApplicationTests:61 - Started TimesheetApplicationTests in 5.26 seconds (JVM running for 6.338)
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:121 - {ajouter Contrat}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:121 - {ajouter Contrat}
+2021-02-18 05:24:37 WARN  SqlExceptionHelper:137 - SQL Error: 1364, SQLState: HY000
+2021-02-18 05:24:37 ERROR SqlExceptionHelper:142 - Field 'telephone' doesn't have a default value
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:126 - Erreur methode ajouterContrat could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:126 - Erreur methode ajouterContrat could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Imen
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Imen
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:154 - {get Employe Prenom ById}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:154 - {get Employe Prenom ById}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:121 - {ajouter Contrat}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:121 - {ajouter Contrat}
+2021-02-18 05:24:37 WARN  SqlExceptionHelper:137 - SQL Error: 1364, SQLState: HY000
+2021-02-18 05:24:37 ERROR SqlExceptionHelper:142 - Field 'telephone' doesn't have a default value
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:126 - Erreur methode ajouterContrat could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:126 - Erreur methode ajouterContrat could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:200 - {delete Contrat ById}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:200 - {delete Contrat ById}
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:207 - Erreur methode deleteContratById :NullPointerException
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:207 - Erreur methode deleteContratById :NullPointerException
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Sawsen
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Sawsen
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:252 - {mettre A jour Email By EmployeId JPQL}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:252 - {mettre A jour Email By EmployeId JPQL}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:256 - mettre A jour Email By EmployeId JPQL : Succes
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:256 - mettre A jour Email By EmployeId JPQL : Succes
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:121 - {ajouter Contrat}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:121 - {ajouter Contrat}
+2021-02-18 05:24:37 WARN  SqlExceptionHelper:137 - SQL Error: 1364, SQLState: HY000
+2021-02-18 05:24:37 ERROR SqlExceptionHelper:142 - Field 'telephone' doesn't have a default value
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:126 - Erreur methode ajouterContrat could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-02-18 05:24:37 ERROR EmployeServiceImpl:126 - Erreur methode ajouterContrat could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:267 - {delete All Contrat JPQL}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:267 - {delete All Contrat JPQL}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:67 - {L'employé est   } Employe [id=0, prenom=Romdhana, nom=Mohamed salah, email=medsalah@esprit.tn, password=null, actif=true, role=ADMINISTRATEUR]
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:67 - {L'employé est   } Employe [id=0, prenom=Romdhana, nom=Mohamed salah, email=medsalah@esprit.tn, password=null, actif=true, role=ADMINISTRATEUR]
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Mohamed salah
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Mohamed salah
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:215 - {get Nombre Employe JPQL}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:215 - {get Nombre Employe JPQL}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Kawthara
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Kawthara
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:72 - {affecter Employe A Departement}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:72 - {affecter Employe A Departement}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Imen
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Imen
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Souad
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Souad
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Bilel
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Bilel
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:240 - {get All Employe By Entreprise}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:240 - {get All Employe By Entreprise}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:240 - {get All Employe By Entreprise}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:240 - {get All Employe By Entreprise}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:319 - {get All Employes}
+2021-02-18 05:24:37 INFO  EmployeServiceImpl:319 - {get All Employes}
+2021-02-18 05:24:39 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Khalil
+2021-02-18 05:24:39 INFO  EmployeServiceImpl:43 - ajouter Employe avec succes Khalil
+2021-02-18 05:24:39 INFO  EmployeServiceImpl:228 - {get All Employe Names JPQL}
+2021-02-18 05:24:39 INFO  EmployeServiceImpl:228 - {get All Employe Names JPQL}
+2021-02-18 05:24:39 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-18 05:24:39 INFO  LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-18 05:24:39 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2021-02-18 05:24:39 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.

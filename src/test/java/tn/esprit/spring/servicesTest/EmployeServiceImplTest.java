@@ -57,14 +57,12 @@ public class EmployeServiceImplTest {
 	@Autowired
 	TimesheetRepository timesheetRepository;
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeServiceImpl.class);
 
 
 	@Test
 	public void ajouterEmployeTest() {
 		Employe employe = new Employe("Mohamed salah", "Romdhana", "medsalah@esprit.tn", true,
 				Role.ADMINISTRATEUR);
-		LOGGER.info("{L'employé est   }" + " " +employe);
 	
 		int i = controller.ajouterEmploye(employe);
 
