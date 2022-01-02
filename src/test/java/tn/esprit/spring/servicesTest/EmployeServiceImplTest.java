@@ -80,7 +80,7 @@ public class EmployeServiceImplTest {
 	
 	@Test
 	public void getEmployePrenomByIdTest() {
-		Employe employe = new Employe("Imen", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
+		Employe employe = new Employe("Imennn", "SAHLI", "Imen.SAHLI@esprit.tn", true, Role.ADMINISTRATEUR);
 		controller.ajouterEmploye(employe);
 
 		String name = controller.getEmployePrenomById(employe.getId());

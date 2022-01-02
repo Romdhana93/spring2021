@@ -59,7 +59,7 @@ public class EmployeServiceImpl implements IEmployeService {
 			if (employe != null && email!=null ) {
 				employe.setEmail(email);
 				employeRepository.save(employe);
-				LOGGER.debug("{Email changer}");
+				LOGGER.info("{Email changer}");
 			} else {
 				LOGGER.error("Erreur methode mettreAjourEmailByEmployeId :NullPointerException" );
 				}
