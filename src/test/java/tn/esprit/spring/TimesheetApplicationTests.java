@@ -9,6 +9,7 @@ class TimesheetApplicationTests {
 	@Test
 	void contextLoads() {
 		/*hello*/
+		System.out.println("hello");
 	}
 
 }
