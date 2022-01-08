@@ -24,7 +24,8 @@ public class TimesheetApplication {
 	@Bean
 	public ServletRegistrationBean<FacesServlet> servletRegistrationBean() {
 		FacesServlet servlet = new FacesServlet();
-		return new ServletRegistrationBean<FacesServlet>(servlet, "*.jsf"); }
+		return new ServletRegistrationBean<FacesServlet>(servlet, "*.jsf");
+		}
 
 	@Bean
 	public FilterRegistrationBean<RewriteFilter> rewriteFilter() {
@@ -43,4 +44,5 @@ public class TimesheetApplication {
 		return registration;
 	}
  
+/*heloo*/	
 }
